@@ -15,3 +15,7 @@ The BU Course Search Tool also allows you to click on courses offered and see al
 All that's left to do is run 12,000 course requests from all the course codes we got, isolate every response into a classroom with specific date and time ranges, and sort through all of them. Fun. 
 
 beautifulsoup was used to extract all the important information from each individual course request and isolate the classroom number and date and time ranges on which it was occupied. That information was stored in a NoSql local DB (fancy words for JSON) and then used in the React client. The information contained days in which rooms were and weren't occupied and time ranges for those days. Those ranges were manipulated and parsed to give human readable responses to searches. 
+
+## What's next for emptyroom
+
+A very big missing part of the project is the ability to search for a specific room (or just search for a building, the scroll bar is too long). However that would most likely require a lot of brainpower and It's 6am or it would require migrating to an actual sql database so actual queries could be made instead of dealing with JSON. 
