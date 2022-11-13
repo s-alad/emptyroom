@@ -2,7 +2,7 @@
 
 Find Empty Classrooms! (and see classroom occupancy times)
 
-## How we built it
+## How it's built
 
 Because BU doesn't provide classroom information and because there were no exposed API's to find class dates from student link, a little creativity was required. 
 
