@@ -102,6 +102,11 @@
   margin: 0;
 }
 
+.red {
+  color: #820000;
+  font-weight: bold;
+}
+
 .green {
   color: #8fbcbb;
 }
@@ -121,6 +126,14 @@
 .datetimepicker > div > div:focus {
   border: none;
   outline: none;
+}
+
+.react-clock__second-hand__body, .react-datetime-picker, .react-datetime-picker__clock {
+  background-color: none !important;
+}
+
+.react-datetime-picker {
+  background-color: none !important;
 }
 
 .calender {

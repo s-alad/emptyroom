@@ -22,14 +22,17 @@ import { AnyARecord } from 'dns';
 
 function App() {
 
+  const [shownSelector, setShownSelector] = useState('');
+
+
   const [shownSchedules, setShownSchedules] = useState({});
 
   const toggleSchedules = (id:string) => {
     console.log('shown schedules')
     console.log(shownSchedules)
-    setShownSchedules(prevShownComments => ({
-      ...prevShownComments,
-      [id]: !prevShownComments[id as keyof typeof prevShownComments]
+    setShownSchedules(prevShown => ({
+      ...prevShown,
+      [id]: !prevShown[id as keyof typeof prevShown]
     }));
   };
 
@@ -207,7 +210,7 @@ function App() {
               Object.entries(buildings).map(([building_name, tag]) => {
                 return (
                   <div className='selections' key={tag}>
-                    <div className='building-select' onClick={() => { fetchClasses(tag) }}>{building_name}</div>
+                    <div className={shownSelector == tag ? 'building-select red' : 'building-select'} onClick={() => { fetchClasses(tag); setShownSelector(tag)}}>{building_name}</div>
                   </div>
                 )
               })

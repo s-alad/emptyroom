@@ -111,6 +111,11 @@
     }
 }
 
+.red {
+    color: #820000;
+    font-weight: bold;
+}
+
 .green {
     color: #8fbcbb;
 }
@@ -130,6 +135,12 @@
             outline: none;
         }
     }
+}
+.react-clock__second-hand__body, .react-datetime-picker, .react-datetime-picker__clock {
+    background-color: none !important;
+}
+.react-datetime-picker {
+    background-color: none !important;
 }
 .calender {
     border-radius: 12px !important; 

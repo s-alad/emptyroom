@@ -81,7 +81,12 @@ class Classroom {
         }
         else {
             //return "until " + this.until;
-            return "until after " + ((parseInt(this.until.split(":")[0]) % 12) || 12).toString() + ":" + this.until.split(":")[1];
+            if (this.avaliable) {
+                return "until " + ((parseInt(this.until.split(":")[0]) % 12) || 12).toString() + ":" + this.until.split(":")[1];
+            }
+            else {
+                return "until after " + ((parseInt(this.until.split(":")[0]) % 12) || 12).toString() + ":" + this.until.split(":")[1];
+            }
         }
     }
 
