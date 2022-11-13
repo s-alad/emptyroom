@@ -1,4 +1,4 @@
-# emptyroom
+# [emptyroom](https://emptyroom.vercel.app/)
 
 Find Empty Classrooms! (and see classroom occupancy times)
 
