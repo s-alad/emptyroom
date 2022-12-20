@@ -6,7 +6,7 @@ Find Empty Classrooms! (and see classroom occupancy times)
 
 Because BU doesn't provide classroom information and because there were no exposed API's to find class dates from student link, a little creativity was required. 
 
-Using the [BU Course Search Tool](https://www.bu.edu/phpbin/course-search/), when you press the search icon it sends a request to BU's database and returns all classes that match your query. 
+Using the [BU Course Search Tool](https://www.bu.edu/phpbin/course-search/), if you press the search icon it sends a request to BU's database and returns all classes that match your query. 
 
 By submitting a query and inputting a page size of 100,000 (overkill I know) it's possible to get the course code of every single course offered at BU. 
 
